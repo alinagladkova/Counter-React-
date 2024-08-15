@@ -1,0 +1,37 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.counter__title {
+  margin: 0 auto;
+}
+
+.counter__result {
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.counter__result--zero {
+  color: purple;
+}
+
+.counter__result--positive {
+  color: yellowGreen;
+}
+
+.counter__result--negative {
+  color: crimson;
+}
+
+.counter__edit {
+  margin: 0 auto;
+}
+
+.counter__result--change {
+  text-shadow: 1px 2px 2px #5c8192;
+  transition-duration: 0.2s;
+}
