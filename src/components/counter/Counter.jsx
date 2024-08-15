@@ -1,15 +1,6 @@
 import { useState } from "react";
 import styles from "./counter.module.css";
 
-//менять цвета цифр
-//увеличивать/уменьшать на разное кол-во
-
-// Вопросы:
-// - как обращаться к какому-либо элементу
-// - как менять стили
-// - как вызывать несколько методов для одного элемента (или в листенере)
-// - как записывать сложные стейты
-
 function Counter({ title, initialNum }) {
   const [count, setCount] = useState(initialNum);
   const currentColor = count === 0 ? styles["counter__result--zero"] : count > 0 ? styles["counter__result--positive"] : styles["counter__result--negative"];
